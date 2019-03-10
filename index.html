@@ -15,55 +15,25 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
 		<script src="js/parallax.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
 	</head>
 
 	<body>
-
+<script>
+bubbly({
+  colorStart: '#fff4e6',
+  colorStop: '#ffe9e4',
+  blur: 1,
+  compose: 'source-over',
+  bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+});
+</script>
 		<div id="wrapper">
 
 			<header id="branding">
-				<h1>СНАДОБ</h1>
+	<a href="img2/water.svg" class="water"</a>
 			</header>
-
-			<nav id="primary">
-				<ul> 
-					<li>
-						<h1>Начало истории</h1>
-						<a class="manned-flight" href="#manned-flight">View</a>
-					</li>
-					<li>
-						<h1>The frameless parachute</h1>
-						<a class="frameless-parachute" href="#frameless-parachute">View</a>
-					</li>
-					<li>
-						<h1>Over the English Channel</h1>
-						<a class="english-channel" href="#english-channel">View</a>
-					</li>
-					<li>
-						<h1>About</h1>
-						<a class="about" href="#about">View</a>
-					</li>
-					<li>
-						<h1>About2</h1>
-						<a class="about2" href="#about2">View</a>
-					</li>
-					<li>
-						<h1>About3</h1>
-						<a class="about3" href="#about3">View</a>
-					</li>
-					<li>
-						<h1>About4</h1>
-						<a class="about4" href="#about4">View</a>
-					</li>
-					<li>
-						<h1>About5</h1>
-						<a class="about5" href="#about5">View</a>
-					</li>
-
-				</ul>
-			</nav>
-
-			<div id="content"><!-- тут статьи, если менять href то в js тоже нужно будет поменять -->
+        <div id="content"><!-- тут статьи, если менять href то в js тоже нужно будет поменять -->
 				<article id="manned-flight">
 					<header>
 						<h1>Начало истории</h1>
@@ -97,7 +67,7 @@
 
 				<article id="about">
 					<header>
-						<h1>Не получилось...</h1>
+						<h1>Неполучилось...</h1>
 					</header>
 					<p>Жабка была растроенна, но взяла все свои силы в маленький кулачок, и решила покушать. Ничего не предвещало беды, но она не смогла дотянуться до жучка, ведь она была такой большой.</p>
 					<nav class="next-prev">
@@ -141,12 +111,16 @@
 				</article>
 				<article id="about5">
 					<header>
-						<h1>Жили они долго и счастливо.</h1>
+						<div class="box">
+
+						    <div class="flo dead outerbox">
+<a href="img2/flo.svg"></a>
+								</div>
+						    <div class="flo dead outerbox"></div>
+						    <div class="flo dead outerbox"></div>
+						    <div class="flo prince outerbox"></div>
+						  </div>
 					</header>
-					<nav class="next-prev">
-						<a class="prev about4" href="#english-channel">Prev</a>
-						<hr />
-					</nav>
 					</nav>
 				</article>
 			</div>
@@ -159,9 +133,8 @@
 				<img id="bg3-5" src="img2/5.svg"  alt="Landscape with trees and cows"/>
 				<img id="bg3-6" src="img2/6.svg"  alt="Landscape with trees and cows"/>
 				<img id="bg3-7" src="img2/8.svg"  alt="Landscape with trees and cows"/>
-        <img id="bg3-8" src="img2/9.svg"  alt="Landscape with trees and cows"/>
 			</div>
-
+<div class="container"></div>
 			<div>
 				<img src="img2/frog.svg" alt="" class="frog" />
 			</div>

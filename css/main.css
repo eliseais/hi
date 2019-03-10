@@ -150,13 +150,13 @@ body
 
     height: 8300px;
 
-    color: white;
+    color: black;
     background: rgb(113,0,140);
     background: linear-gradient(180deg, rgba(113,0,140,1) 0%, rgba(0,97,88,1) 0%, rgba(126,18,131,1) 0%, rgba(46,0,99,1) 100%, rgba(0,212,255,1) 100%);
 }
 h1
 {
-    color: white;
+    color: black;
 }
 a,
 a:link,
@@ -169,12 +169,47 @@ a:visited
             transition: color .25s ease-out;
     text-decoration: none;
 
-    color: white;
+    color: black;
     outline: none;
 }
 a:hover
 {
     color: #000;
+}
+.box{
+    max-width: 50%;
+    margin: 0 auto;
+    display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 200px 200px auto 200px 200px 200px auto 200px 200px auto;
+        grid-gap: 47px;
+        grid: repeat(3, 1fr) / repeat(2, 1fr);
+}
+.outerbox {
+    display: inline-block;
+    margin: 20px;
+}
+
+.flo {
+    background-image:   url('https://image.flaticon.com/icons/svg/1065/1065504.svg');
+    width: 43vw;
+    height: 43vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flo:hover {
+    background-image: url("https://image.flaticon.com/icons/svg/512/512562.svg");
+}
+
+.dead:active{
+    background-image: url("https://image.flaticon.com/icons/svg/1080/1080953.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 25px;
 }
 .frog {
     width: 12vw;
@@ -200,36 +235,6 @@ a:hover
     {
         transform: translateY(0);
     }
-}
-.knopka
-{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 6vw;
-    font-weight: 700;
-
-    display: block;
-
-    margin-top: 52vw;
-    margin-right: 20vw;
-    margin-bottom: -1vw;
-    margin-left: 25vw;
-    padding: 5vw 3vw;
-
-    transition: all .25s ease-in;
-    text-align: center;
-    text-decoration: none;
-
-    color: #00c6ff;
-    border: 1px solid #00c6ff;
-    background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%, #00c6ff);
-    background-position: 100% 0;
-    background-size: 200% 100%;
-}
-
-.knopka:hover
-{
-    color: #fff;
-    background-position: 0 0;
 }
 
 img
@@ -266,6 +271,12 @@ p
 {
     width: 10vw;
 
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 /* Common shared styles
 *****************************************************************/
@@ -803,7 +814,20 @@ p {
     top: 501vw;
 }
 .frog{
-  padding-left: 53vw;
+  padding-left: 51vw;
+  margin-top: -108vw;
+  width: 15vw;
+}
+.flo {
+  width: 40vw;
+      height: 41vw;
+      margin: 20px;
+}
+.box {
+max-width: 41vw;
+    margin: -31vw auto;
+    grid-gap: 6vw;
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
 }
 }
 
